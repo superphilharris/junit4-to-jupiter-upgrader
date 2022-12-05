@@ -37,6 +37,7 @@ find . -name "*.java" | while read filename; do
 
                         # TODO: expected = Exception
                         # TODO: assertEquals("message is first param"
+                        # ^^^  'assertEquals\(\"(.*)\", (.*)\);' -> 'assertEquals($2, "$1");' if single line in IntelliJ
                 fi
         fi
 done
